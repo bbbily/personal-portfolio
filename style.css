@@ -1,0 +1,38 @@
+.top {
+  height: 695px;
+  width: 100%;
+  background: url("./images/background.jpg") no-repeat center right fixed;
+  background-size: cover;
+
+  /*position: relative;*/
+}
+
+.jumbotron {
+  position: relative;
+  top: 30%;
+  margin: auto;
+  padding: 40px 180px;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron > h3 {
+  font-size: 63px;
+  border-bottom: 1px solid white;
+}
+
+.jumbotron > p {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.overlay {
+  background-color: #22A39F;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+}
