@@ -1,3 +1,9 @@
+.container {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
 .top {
   height: 695px;
   width: 100%;
@@ -7,22 +13,23 @@
   /*position: relative;*/
 }
 
-.jumbotron {
+.top-title {
+  background: none;
   position: relative;
   top: 30%;
   margin: auto;
-  padding: 40px 180px;
+  padding: 40px 280px;
   z-index: 2;
   text-align: center;
   color: white;
 }
 
-.jumbotron > h3 {
+.top-title > h3 {
   font-size: 63px;
   border-bottom: 1px solid white;
 }
 
-.jumbotron > p {
+.top-title > p {
   font-size: 28px;
   text-transform: uppercase;
 }
@@ -35,4 +42,12 @@
   left: 0;
   right: 0;
   opacity: 0.75;
+}
+
+
+
+.glyphicon {
+  content: "/e006";
+  font-size: 14px;
+  color: #DFE0E0;
 }
