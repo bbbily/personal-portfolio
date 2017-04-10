@@ -24,6 +24,20 @@ hr {
   opacity: 0.2;
 }
 
+.container h5 {
+  font-size: 18px;
+  color: rgb(67, 66, 66);
+  font-weight: 900;
+  line-height: 1.67;
+}
+
+h6 {
+  font-size: 18px;
+  color: rgb(67, 66, 66);
+  font-weight: 900;
+  line-height: 1.67;
+}
+
 p, span {
   font-size: 15px;
   line-height: 1.64;
@@ -46,7 +60,7 @@ nav {
   top: 100%;
 }
 
-nav > ul > li > a {
+nav > ul > li > a, .narrow {
   background-color: rgb(34, 34, 34);
   text-decoration: none;
   display: inline-block;
@@ -56,9 +70,20 @@ nav > ul > li > a {
   line-height: 80px;
   text-align: center;
   }
-nav > ul > li > a:hover {
+
+nav > ul > li > a:visited {
+  text-decoration: none;
+  color: white;
+}
+nav > ul > li > a:hover, nav > ul > li > a:active {
   text-decoration: none;
   color: rgb(180, 179, 179);
+}
+
+
+
+nav > ul > li > a:link {
+  text-decoration: none;
 }
 .section-container {
   width: 870px;
@@ -75,6 +100,28 @@ nav > ul > li > a:hover {
   background-size: cover;
   position: relative;
 
+}
+
+.section-container .narrow {
+  position: absolute;
+  right: 5%;
+  top: calc(100% - 80px);
+}
+
+.narrow .glyphicon-chevron-down {
+  font-size: 30px;
+  text-decoration: none;
+  animation: move ease-in-out 0.7s infinite alternate;
+}
+
+.glyphicon-chevron-down:hover  {
+  text-decoration: none;
+  color: rgb(180, 179, 179);
+}
+
+@keyframes move {
+  from { transform: translateY(5px) }
+  to { transform: translateY(15px)}
 }
 
 .top-title {
@@ -180,8 +227,16 @@ section.top .top-title > p {
 .education {
   background-color: rgb(242, 238, 226);
 }
-
-
+.education-main > div {
+  display: flex;
+  padding: 30px 0;
+}
+.education-first-col {
+  flex: 3;
+}
+.education-second-col {
+  flex: 7;
+}
 
 .contact {
   background-color: rgb(67, 66, 66);
@@ -213,6 +268,17 @@ section.top .top-title > p {
   padding: 5px 9px;
 }
 
-#profile {
-  transition: 1s;
+
+
+@media screen and (max-width: 1400px) {
+  .section-container {
+    width: 700px;
+  }
+  .projects-main > div > img {
+    height: 200px;
+    width: 320px;
+  }
+  .abilities > div ul li span:first-child {
+    width: 200px;
+  }
 }

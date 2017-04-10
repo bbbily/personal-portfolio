@@ -14,11 +14,11 @@
 <body>
   <nav>
     <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a>Projects</a></li>
-      <li><a>Abilities</a></li>
-      <li><a>Educations</a></li>
-      <li><a>Contact</a></li>
+      <li><a href="#profile" id="goProfile">Profile</a></li>
+      <li><a href="#projects" id="goProjects">Projects</a></li>
+      <li><a href="#abilities" id="goAbilities">Abilities</a></li>
+      <li><a href="#education" id="goEducation">Educations</a></li>
+      <li><a href="#contact" id="goContact">Contact</a></li>
     </ul>
   </nav>
   <div class="container">
@@ -29,6 +29,7 @@
           <p>Interactive resume</p>
         </div>
         <div class="overlay"></div>
+        <a class="narrow" href="#profile"><span class="glyphicon glyphicon-chevron-down"></span></a>
       </div>
     </section>
     <section class="profile" id="profile">
@@ -227,22 +228,31 @@
     <section class="education">
       <div class="section-container">
         <div class="education-title">
-          <h3>Educations</h3>
+          <h3>Education</h3>
           <p>“Protons give an atom its identity, electrons its personality.”
           <br>- Bill Bryson</p>
         </div>
         <hr>
         <div class="education-main">
           <div>
-            <h5><span>Devmountain</span>
-            <br>Jan 2017 - April 2017</h5>
-            <p><span>Course - full-time(Immersive)</span>
-            <br>DevMountain is an industry-leading coding school that began in the heart of the Wasatch Mountains. The largest coding/technology school in the Intermountain West, and one of the highest rated coding schools in the country. </p>
+            <div class="education-first-col">
+              <h5>Devmountain
+              <br><span>Jan 2017 - April 2017</span></h5>
+            </div>
+            <div class="education-second-col">
+              <h6>Course - full-time(Immersive)
+              <br><span>DevMountain is an industry-leading coding school that began in the heart of the Wasatch Mountains. The largest coding/technology school in the Intermountain West, and one of the highest rated coding schools in the country. </span></h6>
+            </div>
           </div>
           <div>
-            <h5><span>FuZhou University</span>
-            <br>Sep 2004 - Sep 2007</h5>
-            <p><span>Associate</span>
+            <div class="education-first-col">
+              <h5>FuZhou University
+              <br><span>Sep 2004 - Sep 2007</span></h5>
+            </div>
+            <div class="education-second-col">
+              <p>Associate
+              <br><span></span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -264,6 +274,10 @@
     </section>
   </div>
 
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script src="./main.js"></script>
 </body>
 </html>
