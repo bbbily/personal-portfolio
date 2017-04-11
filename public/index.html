@@ -12,15 +12,7 @@
   <title>Peng Portfolio</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#profile" id="goProfile">Profile</a></li>
-      <li><a href="#projects" id="goProjects">Projects</a></li>
-      <li><a href="#abilities" id="goAbilities">Abilities</a></li>
-      <li><a href="#education" id="goEducation">Educations</a></li>
-      <li><a href="#contact" id="goContact">Contact</a></li>
-    </ul>
-  </nav>
+
   <div class="container">
     <section class="top">
       <div class="section-container">
@@ -29,8 +21,20 @@
           <p>Interactive resume</p>
         </div>
         <div class="overlay"></div>
-        <a class="narrow" href="#profile"><span class="glyphicon glyphicon-chevron-down"></span></a>
+        <a class="narrow" href="#profile">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#profile" id="goProfile">Profile</a></li>
+            <li><a href="#projects" id="goProjects">Projects</a></li>
+            <li><a href="#abilities" id="goAbilities">Abilities</a></li>
+            <li><a href="#education" id="goEducation">Educations</a></li>
+            <li><a href="#contact" id="goContact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+      <!-- <span class="fa fa-bars"></span> -->
     </section>
     <section class="profile" id="profile">
       <div class="section-container">
@@ -44,15 +48,15 @@
             <h4>About me</h4>
             <p>Born and raised in China. Moved to the U.S in 2009. I am a programmer with good knowledge of front-end techniques. I know how to create your website using the latest technologies available. I love spending time on solving little details.</p>
           </div>
-          <div><img src="" alt="personal photo"></div>
+          <div class="photo"><img src="./images/photo.jpg" alt="personal photo"></div>
           <div>
             <h4>Details</h4>
-            <p><span>Name:</span>
-            <br>Peng Wu
-            <br><span>Age:</span>
-            <br>30 years
-            <br><span>Location:</span>
-            <br>Provo, Utah</p>
+            <h6>Name:
+            <span>Peng Wu</span>
+            <br>Age:
+            <span>30 years</span>
+            <br>Location:
+            <span>Provo, Utah</span></h6>
           </div>
         </div>
       </div>
@@ -66,9 +70,43 @@
         </div>
         <hr>
         <div class="projects-main">
-          <div><img src="./images/harry.png" alt="harry"></div>
-          <div><img src="./images/lexusls.png" alt="lexusls"></div>
-          <div><img src="./images/soundcool.png" alt="soundcool"></div>
+          <a href="http://restaurantetrabajo.com" target="_blank">
+            <img src="./images/harry.png" alt="harry">
+            <div class="overlay projects-overlay">
+            </div>
+            <div class="projects-desc">
+              <h4>Harry's</h4>
+              <hr>
+              <p>Fully functional e-commerce website</p>
+              <p><strong>Tags: </strong>
+                <br>Angular, Node, CSS, webpack</p>
+            </div>
+          </a>
+          <a href="http://lexusls.restaurantetrabajo.com" target="_blank">
+            <img src="./images/lexusls.png" alt="lexusls">
+            <div class="overlay projects-overlay">
+            </div>
+            <div class="projects-desc">
+              <h4>LexusLs</h4>
+              <hr>
+              <p>Parallax effect </p>
+              <p><strong>Tags: </strong>
+                <br>jQuery, CSS</p>
+            </div>
+          </a>
+          <a href="http://soundcool.restaurantetrabajo.com" target="_blank">
+            <img src="./images/soundcool.png" alt="soundcool">
+            <div class="overlay projects-overlay">
+
+            </div>
+            <div class="projects-desc">
+              <h4>Soundcool </h4>
+              <hr>
+              <p>Cool Music Player</p>
+              <p><strong>Tags: </strong>
+              <br>Angular, jQuery, CSS, Gulp</p>
+            </div>
+        </a>
         </div>
       </div>
     </section>
@@ -200,7 +238,7 @@
             </li>
           </ul>
         </div>
-        <button href="https://github.com/bbbily">See project on Github</button>
+        <a href="https://github.com/bbbily" target="_blank"><button>See project on Github</button></a>
       </div>
       <hr>
       <div class="language-container">
@@ -266,8 +304,8 @@
         </div>
         <hr>
         <div class="contact-main">
-          <a href="https://www.linkedin.com/in/peng-wu-3ba10812a/"><span class="fa fa-linkedin"></span>&nbsp;&nbsp;&nbsp;&nbsp;https://www.linkedin.com/in/peng-wu-3ba10812a/</a>
-          <a href="https://www.facebook.com/peng.wu.1291"><span class="fa fa-facebook"></span>&nbsp;&nbsp;&nbsp;&nbsp;https://www.facebook.com/peng.wu.1291</a>
+          <a href="https://www.linkedin.com/in/peng-wu-3ba10812a/"><span class="fa fa-linkedin"></span><span class="fa-icon linkedinLink">https://www.linkedin.com/in/peng-wu-3ba10812a/</span></a>
+          <a href="https://www.facebook.com/peng.wu.1291"><span class="fa fa-facebook"></span><span class="fa-icon">https://www.facebook.com/peng.wu.1291</span></a>
         </div>
         <hr>
       </div>
