@@ -198,7 +198,9 @@ section.top .top-title > p {
 
 .projects {
   background-color: rgb(242, 238, 226);
+  padding-bottom: 50px;
 }
+
 
 .projects-main {
   display: flex;
@@ -258,6 +260,11 @@ a .projects-desc > p {
   transition: 1s;
 }*/
 
+
+.abilities {
+  padding-bottom: 50px;
+}
+
 .abilities > div ul {
   list-style-type: none;
   margin: 0;
@@ -303,6 +310,8 @@ a .projects-desc > p {
 .contact {
   background-color: rgb(67, 66, 66);
   padding-bottom: 200px;
+  min-height: 600px;
+  height: 100vh;
 }
 .contact-main {
   padding: 20px 0;
