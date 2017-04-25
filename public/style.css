@@ -443,4 +443,13 @@ a .projects-desc > p {
   .container h2 {
     font-size: 40px;
   }
+  .photo > img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 40px 20px;
+  }
+  .contact {
+    overflow: hidden;
+  }
 }
