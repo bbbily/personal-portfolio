@@ -392,6 +392,9 @@ a .projects-desc > p {
   .linkedinLink {
     margin-left: 70px;
   }
+  .googleLink {
+    margin-bottom: 20px;
+  }
   .education-main > div {
     display: block;
   }
@@ -451,5 +454,8 @@ a .projects-desc > p {
   }
   .contact {
     overflow: hidden;
+  }
+  .googleLink {
+    margin-bottom: 40px;
   }
 }
