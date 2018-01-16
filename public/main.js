@@ -1,21 +1,21 @@
 $(document).ready(function() {
   $(".narrow").on("click", function() {
-    $("body").animate({scrollTop: $(".profile").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".profile").offset().top}, 600);
   })
   $("#goProfile").on("click", function() {
-    $("body").animate({scrollTop: $(".profile").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".profile").offset().top}, 600);
   })
   $("#goProjects").on("click", function() {
-    $("body").animate({scrollTop: $(".projects").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".projects").offset().top}, 600);
   })
   $("#goAbilities").on("click", function() {
-    $("body").animate({scrollTop: $(".abilities").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".abilities").offset().top}, 600);
   })
   $("#goEducation").on("click", function() {
-    $("body").animate({scrollTop: $(".education").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".education").offset().top}, 600);
   })
   $("#goContact").on("click", function() {
-    $("body").animate({scrollTop: $(".contact").offset().top}, 600);
+    $("html, body").animate({scrollTop: $(".contact").offset().top}, 600);
   })
 
   $(".projects-main").find("a").mouseover(function() {
